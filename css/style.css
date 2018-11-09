@@ -40,9 +40,9 @@ li:hover .lineRight{
 .active .lineLeft, .active .lineRight{
     opacity: 1;
 }
-/* .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
     background: none!important;
-} */
+}
 
 @keyframes lineTransferRight{
     0%{
