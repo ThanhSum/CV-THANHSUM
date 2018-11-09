@@ -1,0 +1,83 @@
+.cover{
+    background-image: url(https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg);
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.cover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+li a{
+    padding: 10px 20px!important
+}
+.lineLeft{
+    height: 1px;
+    background: linear-gradient(to right, orange, orangered);
+    opacity: 0;
+    
+}
+.lineRight{
+    opacity: 0;
+    height: 1px;
+    background: linear-gradient(to left, orange, orangered);
+}
+li:hover .lineLeft{
+    opacity: 1;
+    animation: lineTransferLeft .3s  0s linear;
+}
+li:hover .lineRight{
+    opacity: 1;
+    animation: lineTransferRight .3s  0s linear;
+}
+.active .lineLeft, .active .lineRight{
+    opacity: 1;
+}
+.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+    background: none!important;
+}
+
+@keyframes lineTransferRight{
+    0%{
+      width: 0%;
+      float: right
+    }
+    10%{
+      width: 10%;
+      float: right
+
+      
+    }
+    50%{
+      width: 50%;
+      float: right
+      
+    }
+    100%{
+      width: 100%;
+      float: right
+
+    }
+  }
+
+  @keyframes lineTransferLeft{
+    0%{
+      width: 0%;
+    }
+    10%{
+      width: 10%;
+    }
+    50%{
+      width: 50%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
