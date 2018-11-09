@@ -1,13 +1,13 @@
 .cover{
     /* background-image: url(https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg); */
-    min-height: 700px; 
+    /* min-height: 700px; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative;  */
 }
 .cover-content {
     position: absolute;
