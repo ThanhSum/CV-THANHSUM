@@ -1,7 +1,6 @@
 .work{
     background-image: url(https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg);
      min-height: 700px; 
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -11,9 +10,10 @@
 }
 .cover-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    font-family: 'Exo 2';
 }
 li a{
     padding: 10px 20px!important;
@@ -56,18 +56,15 @@ li:hover .lineRight{
     10%{
       width: 10%;
       float: right
-
-      
     }
     50%{
       width: 50%;
       float: right
-      
+
     }
     100%{
       width: 100%;
       float: right
-
     }
   }
 
@@ -90,26 +87,26 @@ li:hover .lineRight{
     border-image: linear-gradient(to right, orangered 0%,orange 100%);
     border-image-slice: 1;
     border-width: 1px;
-    background: #000;
+    background: transparent;
     color: white;
     padding: 8px 16px;
     outline-style: none!important;
     margin: 0 10px
   }
-  /* .btnStyle:hover{
+  .btnStyle:hover{
     box-shadow: 0 0 50px 0 rgba(247,149,30,.35), 0 0 20px 0 rgba(247,149,30,.3) inset;
     text-shadow: 0 0 3px #fff;
     cursor: pointer;
     outline-style: none!important;
 
-  } */
+  }
   .cover-sub{
       font-size: 30px
   }
   .icon button:hover{
-      animation: rubberBand 1s  forwards linear;
+      animation: tada 1s  forwards linear;
   }
   i{
-      height: 50px;
-      width: 50px;
+      height: 30px;
+      width: 20px;
   }
