@@ -22,13 +22,13 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- Start your project here-->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top rgba-black-strong hoverable">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top rgba-black-strong hoverable" id="menu">
     <a class="navbar-brand" href="#" style="font-family: 'Fredericka the Great', cursive">CV RESUME</a>
-    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -36,32 +36,32 @@
         <li class="nav-item animated zoomIn view overlay">
           <div class="lineRight"></div>
           <div class="clear"></div>
-          <a class="nav-link" href="#">ABOUT</a>
+          <a class="nav-link" href="#about">ABOUT</a>
           <div class="lineLeft"></div>
         </li>
         <li class="nav-item animated zoomIn  delay-200ms ">
           <div class="lineRight"></div>
           <div class="clear"></div>
           <div class="clear"></div>
-          <a class="nav-link" href="#">WORK</a>
+          <a class="nav-link" href="#work">WORK</a>
           <div class="lineLeft"></div>
         </li>
         <li class="nav-item animated zoomIn  delay-400ms">
           <div class="lineRight"></div>
           <div class="clear"></div>
-          <a class="nav-link" href="#">SKILLS</a>
+          <a class="nav-link" href="#skills">SKILLS</a>
           <div class="lineLeft"></div>
         </li>
         <li class="nav-item animated zoomIn  delay-600ms">
           <div class="lineRight"></div>
           <div class="clear"></div>
-          <a class="nav-link" href="#">PORTFOLIO</a>
+          <a class="nav-link" href="#portfolio">PORTFOLIO</a>
           <div class="lineLeft"></div>
         </li>
         <li class="nav-item animated zoomIn  delay-800ms">
           <div class="lineRight"></div>
           <div class="clear"></div>
-          <a class="nav-link" href="#">CONTACT</a>
+          <a class="nav-link" href="#contact">CONTACT</a>
           <div class="lineLeft"></div>
         </li>
       </ul>
@@ -81,17 +81,19 @@
             <p><strong>SUM</strong></p>
             <p><strong>a Front End Developer</strong></p>
           </div>
-          <span class="animated fadeInDown" style="font-size: 40px"> <span>Hi! I'm</span> <span id="typed"></span></span>
+          <span class="animated fadeInDown" style="font-size: 40px; line-height: 50px"> <span>Hi! I'm</span> <span id="typed"></span></span>
         </p>
-        <p class="animated fadeInDown delay-1000ms mt-5" style="font-size: 40px">My Slogan: "Make It AWSOME!"</p>
+        <p class="animated fadeInDown delay-1000ms mt-5" style="font-size: 40px; line-height: 50px">I Make Awsome
+          Websites</p>
         <!-- Grid row -->
         <p class="row mt-5">
           <!-- Grid column -->
           <div class="col-md-12 icon animated fadeInUp delay-1000ms">
 
-            <button type="button" class="btnStyle waves-effect px-3 "> <a href="https://www.facebook.com/thanhsum" target="_blank">
+            <button type="button" class="btnStyle waves-effect px-3"> <a href="https://www.facebook.com/thanhsum"
+                target="_blank">
                 <i class="fa fa-facebook" style="font-size: 26px;color: white"></i></a></button>
-            <button type="button" class="btnStyle waves-effect px-3"> <a href="https://www.linkedin.com/in/sum-tran-thanh-5869a617/"
+            <button type="button" class="btnStyle waves-effect px-3 "> <a href="https://www.linkedin.com/in/sum-tran-thanh-5869a617/"
                 target="_blank"><i class="fa fa-linkedin" style="font-size: 26px;color: white"></i></a> </button>
             <button type="button" class="btnStyle waves-effect px-3"><a href="https://github.com/thanhsum" target="_blank"><i
                   class="fa fa-github" style="font-size: 26px; color: white"></i></a> </button>
@@ -107,28 +109,35 @@
   <div class="clear">
   </div>
   <!-- About Me -->
-  <section class="container-fluid about">
+  <section class="container-fluid about" id="about">
     <div class="container">
       <div class="row py-3">
         <div class="col-md-12 text-justify">
-          <div>
+          <!-- <div>
             <img src="./img/about.png">
-          </div>
+          </div> -->
+          <hr>
+          <h2 class="text-center font-weight-bold">ABOUT ME</h2>
+          <hr>
           <br>
           <div data-aos="zoom-in" data-aos-duration="1000">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nam quis, minima exercitationem sunt voluptatem expedita
-            necessitatibus alias ipsa saepe vitae nobis! Deserunt vel recusandae voluptas, maxime odit quos debitis!.
+            Hi, My name's Sum, I'm a Web Developer with 6 months of experience in front-end development. I build
+            websites and “make it awesome”!
           </div>
           <br>
-          <div><img src="./img/2.png"></div>
+          <!-- <div><img src="./img/2.png"></div> -->
+          <h3>Objectives</h3>
           <div data-aos="zoom-in" data-aos-duration="1000">
-            My professional objectives are to develop and create good websites for users. Besides programming I have good communication
+            My professional objectives are to develop and create good websites for users. Besides programming I have
+            good communication
             skills, always deliver on time and Guarantee 100% Satisfaction and Quality.
           </div>
           <br>
-          <div><img src="./img/3.png"></div>
+          <!-- <div><img src="./img/3.png"></div> -->
+          <h3>What I Do?</h3>
           <div data-aos="zoom-in" data-aos-duration="1000">
-            I am very dedicated about web programming and willing to learn a new skill every day. I'm honesty, good comunication, responsible
+            I am very dedicated about web programming and willing to learn a new skill every day. I'm honesty, good
+            comunication, responsible
             and always ready to work on something new.
           </div>
           <br>
@@ -144,7 +153,7 @@
                 <i class="fa fa-genderless"></i> GitHub
               </div>
             </div>
-            <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+            <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
               <div>
                 <i class="fa fa-genderless"></i> CSS3
               </div>
@@ -155,7 +164,7 @@
                 <i class="fa fa-genderless"></i> Angular 6
               </div>
             </div>
-            <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+            <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
               <div>
                 <i class="fa fa-genderless"></i> JavaScript
               </div>
@@ -168,31 +177,20 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-md-4 py-3">
-          <div>
-            <div class="card hoverable " data-aos="zoom-in" data-aos-duration="1000">
-              <img class="card-img-top img-responsive" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg">
-              <div class="card-body">
-                <h4 class="card-title">SUM TRAN THANH</h4>
-                <p class="card-text">Date of birth: September 6, 1986</p>
-                <p class="card-text">Adress: Thoi Tam Thon, Hoc Mon, HCM</p>
-                <p class="card-text">Email: thanhsum@gmail.com</p>
-                <p class="card-text">Phone: 0906.009.101 </p>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
 
   <!-- timelines -->
-  <section class=" work view">
+  <section class=" work view" id="work">
     <div class="rgba-black-strong">
-      <div class="container ">
-        <div class="py-3 ">
+      <div class="container py-3">
+        <!-- <div class="py-3 ">
           <img src="./img/work.svg" alt="">
-        </div>
+        </div> -->
+        <hr class="hrOrange" style="">
+        <h2 class="text-center font-weight-bold text-white h2Work">WORK HISTORY</h2>
+        <hr class="hrOrange">
         <div class="timeline">
           <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
             <div class="col-10 col-md-5 order-3 order-md-1 timeline-content" data-aos="zoom-in" data-aos-duration="1000">
@@ -201,7 +199,8 @@
               <p>CyberSoft Academy</p>
               <p></p>
             </div>
-            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center" data-aos="zoom-in"
+              data-aos-duration="1000">
 
             </div>
             <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
@@ -218,7 +217,8 @@
               <p> <i class="fa fa-genderless"></i> Patience</p>
               <p> <i class="fa fa-genderless"></i> Customer care skills</p>
             </div>
-            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center" data-aos="zoom-in"
+              data-aos-duration="1000">
 
             </div>
             <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
@@ -231,7 +231,8 @@
               <p>2010 - 2012</p>
               <p>NIIT Academy</p>
             </div>
-            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center" data-aos="zoom-in"
+              data-aos-duration="1000">
 
             </div>
             <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
@@ -241,57 +242,67 @@
   </section>
 
   <!-- skills -->
-  <section class="bg-dark text-white">
+  <section class="bg-dark text-white py-3" id="skills">
     <div class="container">
-      <h1 class="py-5">SKILLS</h1>
+      <hr class="hrLight">
+      <h2 class="text-center font-weight-bold">SKILLS</h2>
+      <hr class="hrLight">
       <div class="row">
         <div class="col-lg-6 mb-5">
           <span>HTML5: </span>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning percent90" data-aos="fade-right" data-aos-duration="2000"
-              role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning percent90" data-aos="fade-right"
+              data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="width: 90%"></div>
           </div>
 
           <span>JavaScript: </span>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning " data-aos="fade-right" data-aos-duration="2000"
-              role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning " data-aos="fade-right"
+              data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="width: 70%"></div>
           </div>
 
           <span>SASS/ SCSS: </span>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-aos="fade-right" data-aos-duration="2000"
-              role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-aos="fade-right"
+              data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="width: 70%"></div>
           </div>
 
           <span>jQuery: </span>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-aos="fade-right" data-aos-duration="2000"
-              role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-aos="fade-right"
+              data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="width: 75%"></div>
           </div>
         </div>
         <div class="col-lg-6 mb-5">
           <span>CSS3: </span>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning percent90" data-aos="fade-right" data-aos-duration="2000"
-              role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning percent90" data-aos="fade-right"
+              data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="width: 90%"></div>
           </div>
 
           <span>Bootstrap: </span>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning percent90 " data-aos="fade-right" data-aos-duration="2000"
-              role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning percent90 " data-aos="fade-right"
+              data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="width: 85%"></div>
           </div>
           <span>UX/ UI: </span>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-aos="fade-right" data-aos-duration="2000"
-              role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-aos="fade-right"
+              data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="width: 75%"></div>
           </div>
 
           <span>Angular: </span>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-aos="fade-right" data-aos-duration="2000"
-              role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-aos="fade-right"
+              data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="width: 70%"></div>
           </div>
 
 
@@ -302,73 +313,90 @@
   </section>
 
   <!-- portfolio -->
-  <section class="portfolio py-5">
-    <div class="container">
-      <h1 class="py-5">PORTFOLIO</h1>
-      <div class="row mb-5">
+  <section class="portfolio " id="portfolio">
+    <div class="container py-3">
+      <hr>
+      <h2 class="text-center font-weight-bold">PORTFOLIO</h2>
+      <hr>
+      <div class="row my-5">
         <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="">
-         <a href="./img/VUS.png" target="_blank">
-          <img src="img/vus_banner.jpg" class="w-100 img-fluid z-depth-1"></a>
+          <a href="https://sum-angular-project.firebaseapp.com/" target="_blank">
+            <img src="img/angular_banner.jpg" class="w-100 img-fluid z-depth-1">
+          </a>
         </div>
-        <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-          <img src="img/newshop_banner.jpg" class="w-100 img-fluid z-depth-1">
+        <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+          <img src="img/elearning_banner.jpg" class="w-100 img-fluid z-depth-1">
         </div>
+
         <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
           <img src="img/hs_banner.jpg" class="w-100 img-fluid z-depth-1">
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">
           <img src="img/carBanner.jpg" class="w-100 img-fluid z-depth-1">
         </div>
-        <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-          <img src="img/elearning_banner.jpg" class="w-100 img-fluid z-depth-1">
+
+        <div class="col-md-4" data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="400" >
+          <a href="./img/VUS.png" target="_blank">
+            <img src="img/vus_banner.jpg" class="w-100 img-fluid z-depth-1"></a>
         </div>
-        <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
-          <a href="https://sum-angular-project.firebaseapp.com/">
-              <img src="img/angular_banner.jpg" class="w-100 img-fluid z-depth-1">
-          </a>
+        <div class="col-md-4"  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" >
+          <img src="img/newshop_banner.jpg" class="w-100 img-fluid z-depth-1">
         </div>
       </div>
     </div>
   </section>
 
   <!-- contact -->
-  <section class="contact bg-dark">
+  <section class="contact bg-dark text-white py-3" id="contact">
     <div class="container">
-      <h1 class="py-5">CONTACT</h1>
-      <div class="row">
-        <div class="col-md-6">
+      <hr class="hrLight">
+      <h2 class="text-center font-weight-bold">CONTACT</h2>
+      <hr class="hrLight ">
+      <div class="row py-5">
+        <div class="col-md-5">
           <div>
-            Contact me anytime ! Via Phone: (+84) 931-891-198 or Email: khoateamer@gmail.com.
+            Phone: (+84) 906-009-101 <br>
+            Email: thanhsum@gmail.com.
           </div>
           <div class="md-form">
             <input mdbInputDirective type="text" name="text" [(ngModel)]="text" id="form1" class="form-control">
-            <label for="form1" class="">Example label</label>
+            <label for="form1" class="">Name</label>
           </div>
           <div class="md-form">
             <input mdbInputDirective type="text" name="text" [(ngModel)]="text" id="form1" class="form-control">
-            <label for="form1" class="">Example label</label>
+            <label for="form1" class="">Email</label>
+          </div>
+          <div class="md-form" color="warning">
+            <input mdbInputDirective type="text" name="text" [(ngModel)]="text" id="form1" class="form-control" color="warning">
+            <label for="form1" class="">Phone Number</label>
           </div>
           <div class="md-form">
-            <input mdbInputDirective type="text" name="text" [(ngModel)]="text" id="form1" class="form-control">
-            <label for="form1" class="">Example label</label>
+            <textarea class="md-textarea form-control " rows="3" id="input_text" type="text" length="120"
+              mdbCharCounter mdbInputDirective></textarea>
+            <label for="input_text">Message</label>
           </div>
-          <div class="md-form">
-            <textarea class="md-textarea form-control " rows="3" id="input_text" type="text" length="120" mdbCharCounter mdbInputDirective></textarea>
-            <label for="input_text">Type your text</label>
-          </div>
-          <button class="btn peach-gradient ">SEND ME MESSENGER</button>
+          <button class="btnStyle1 btn" type="submit">SEND ME MESSENGER</button>
 
         </div>
-        <div class="col-md-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.5265465465595!2d108.2121638142846!3d15.986082488932366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a680379d81b%3A0xca9672b2c5c37930!2zMTU0IFBoYW4gS2jDtGksIEhvw6AgWHXDom4sIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1542426668950"
-            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="col-md-7">
+          <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.5265465465595!2d108.2121638142846!3d15.986082488932366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a680379d81b%3A0xca9672b2c5c37930!2zMTU0IFBoYW4gS2jDtGksIEhvw6AgWHXDom4sIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1542465977189"
+            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- footer -->
+
+  <footer class="text-center py-3 bg-dark text-white">
+    <div class="container">
+      <hr class="hrLight">
+      <div>© Copyrights 2018| SumTran</div>
+    </div>
+  </footer>
   <!-- /Start your project here-->
 
 

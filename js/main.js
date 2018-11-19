@@ -6,3 +6,5 @@ $(document).ready(function () {
       }
     );
   })
+
+  $('#about').scrollspy({ target: '#myNavbar' })
