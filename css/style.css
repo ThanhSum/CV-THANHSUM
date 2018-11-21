@@ -437,6 +437,10 @@ textarea:focus{
    .btnStyle1{
        margin-bottom: 25px!important;
    }
+   .timeline-image::before {
+    width: 30px;
+    height: 30px;
+   }
   }
   /* end */
   
