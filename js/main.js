@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $('li').click(
       function () {
@@ -6,5 +7,4 @@ $(document).ready(function () {
       }
     );
   })
-
-  $('#about').scrollspy({ target: '#myNavbar' })
+  
