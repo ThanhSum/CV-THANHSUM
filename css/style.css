@@ -418,6 +418,9 @@ textarea:focus{
     color: black;
     text-shadow: 0 0 1px;
   }
+  button a{
+      color: black!important
+  }
 
 /* respontive */
 @media screen and (max-width: 768px) {
